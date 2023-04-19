@@ -2,19 +2,19 @@ import socket
 import sys
 from plot import *
 from getloc import *
-from trace import traceroute
+from trace_1 import traceroute
 from help import *
 
 # get hostname from parse
-if len(sys.argv)<2:
-    printHelp()
-    exit()
+#if len(sys.argv)<2:
+#    printHelp()
+#    exit()
     
-hostname = sys.argv[1]
+#hostname = sys.argv[1]
+hostname = "discord.com"
 
 # get my location (myIP,(lon,lat),city)
 myLoc = getMyLoc()
-
 
 # get target location IP,(lon,lat),city
 targetIP = socket.gethostbyname(hostname)
@@ -63,4 +63,3 @@ mark(fig,f'My IP - {myLoc[2]}', myLoc[1])
 mark(fig,f'{hostname} - {targetLoc[2]}',targetLoc[1],name=hostname)
 
 fig.show()
-
