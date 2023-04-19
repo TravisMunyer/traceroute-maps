@@ -6,12 +6,11 @@ from trace_1 import traceroute
 from help import *
 
 # get hostname from parse
-#if len(sys.argv)<2:
-#    printHelp()
-#    exit()
+if len(sys.argv)<2:
+   printHelp()
+   exit()
     
-#hostname = sys.argv[1]
-hostname = "discord.com"
+hostname = sys.argv[1]
 
 # get my location (myIP,(lon,lat),city)
 myLoc = getMyLoc()
