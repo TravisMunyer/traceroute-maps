@@ -4,6 +4,9 @@ This project obtains a list of IP addresses along a route using traceroute. Then
 ## Further Suggested Changes
 Currently, this tool uses ipapi to retrieve the domain information. The ipapi website has a paid and free version. The free version, which is used by this tool, will lock access after a relatively small number of retreival requests. The website then will prevent the ip address from retreiving whois results for a short while. Attempts to use the tool during this time will not produce a result, as the tool breaks. Future iterations of this tool should instead directly query available Whois servers to get the domain information, or go through a public website such as icann.org. The websites or whois servers may not produce quite as friendly of a format as ipapi, so this will require extra engineering. 
 
+Summary:
+* Change how the tool retreives whois data
+
 ## Installation
 
 ```
