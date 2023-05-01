@@ -12,6 +12,7 @@ Currently, this tool uses ipapi to retrieve the domain information. The ipapi we
 
 Summary:
 * Change how the tool retreives whois data
+* Also could display more data on each ip address, as more information is available from the whois query
 
 ## Installation
 
