@@ -22,5 +22,5 @@ pip install -r requirements.txt
 ## Run
 
 ```
-python main.py [hostname/domain]
+python main.py [ip/hostname/domain]
 ```
